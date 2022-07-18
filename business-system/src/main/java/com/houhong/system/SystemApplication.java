@@ -1,16 +1,13 @@
-package com.houhong;
+package com.houhong.system;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BpmStarterApplication {
+public class SystemApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BpmStarterApplication.class, args);
+        SpringApplication.run(SystemApplication.class, args);
     }
-
-
-
 
 }

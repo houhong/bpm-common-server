@@ -1,10 +1,10 @@
-package com.houhong.pbm.bpmstarter;
+package com.houhong.system;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BpmStarterApplicationTests {
+class SystemApplicationTests {
 
     @Test
     void contextLoads() {
