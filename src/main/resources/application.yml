@@ -1,0 +1,33 @@
+server:
+  port: 8090
+
+
+camunda:
+  bpm:
+    # 流程引擎name
+    process-engine-name: camundaEngine
+    # 历史级别
+    history-level: full
+    # 是否自动部署
+    auto-deployment-enabled: false
+    #id生产规则 允许值：simple、strong、prefixed。prefixedid 生成器类似于strong，但使用 Spring 应用程序名称 ( ${spring.application.name}) 作为每个 id 的前缀。
+    id-generator: simple
+    deployment-resource-pattern:
+      - classpath:processes/*.bpmn20.xml
+    job-execution:
+      enabled: true
+    # database:
+    #   type: postgres
+    #   # 在使用自定义模式和表前缀时，应该手动使用sql脚本创建camunda所需要的的表
+    #   table-prefix: camunda_service.
+    #   jdbc-batch-processing: true
+    # 更多配置 https://docs.camunda.org/manual/7.13/user-guide/spring-boot-integration/configuration/
+    authorization:
+      enabled: true
+    admin-user:
+      id: admin
+      first-name: admin
+      password: 123456
+    # 禁用web首页登陆 默认true
+    webapp:
+      index-redirect-enabled: true
