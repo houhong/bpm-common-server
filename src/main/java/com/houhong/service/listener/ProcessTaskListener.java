@@ -30,6 +30,7 @@ public class ProcessTaskListener implements TaskListener {
 
     public static void main(String[] args) {
 
+        
 
         //Id生成器
         StrongUuidGenerator strongUuidGenerator = new StrongUuidGenerator();
